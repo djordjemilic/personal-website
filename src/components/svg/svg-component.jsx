@@ -3,45 +3,28 @@ import React from "react";
 export const MouseSvg = (props) => {
   return (
     <svg
-      width={100}
-      height={100}
-      viewBox="0 0 95 100"
+      width={60}
+      height={60}
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{
-        width: 60,
-        height: 60,
-      }}
       {...props}
     >
       <style>
         {
-          "@keyframes line-mouse1-scroll{0%,to{transform:translate3d(0,0,0)}50%{transform:translate3d(0,10px,0)}}"
+          "@keyframes line-arrow-left1-fly{0%{transform:translate3d(200px,0,0)}30%,50%{transform:translate3d(-4px,0,0)}40%,70%{transform:translate3d(0,0,0)}to{transform:translate3d(-240px,0,0)}}"
         }
       </style>
-      <rect
-        className="stroke1 fill1"
-        x={1}
-        y={1}
-        width={53}
-        height={84}
-        rx={19}
-        fill="#fff"
-        stroke="#000"
-        strokeWidth={2}
-        style={{
-          animationDuration: "2s",
-        }}
-      />
       <path
-        className="stroke2"
+        className="stroke1"
+        d="M95 51.008H5m0 0L40.847 15M5 51.008 40.847 86.25"
         stroke="#000"
         strokeWidth={2}
+        strokeLinecap="round"
         style={{
-          animationDuration: "2s",
-          animation: "line-mouse1-scroll 2s infinite",
+          animationDuration: "1.2s",
+          animation: "line-arrow-left1-fly 3s infinite ease-in-out",
         }}
-        d="M28 11v15"
       />
     </svg>
   );
