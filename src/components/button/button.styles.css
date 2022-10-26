@@ -1,0 +1,19 @@
+.line-mouse2 {
+  animation: line-mouse2-scroll 2s infinite;
+}
+@keyframes line-mouse2-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .line-mouse2 {
+    animation: none;
+  }
+}
